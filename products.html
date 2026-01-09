@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Fashion Point Men's Clothing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/1234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">FASHION<span class="logo-point">POINT</span></span>
+                </a>
+            </div>
+            
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="wholesale.html">Wholesale</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Our Products</h1>
+            <p class="page-subtitle">Explore our premium collection of men's casual wear</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Product Categories</h2>
+            <p class="section-subtitle">Browse our wide range of men's fashion categories</p>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="t-shirts">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="T-Shirts">
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">T-Shirts</h3>
+                        <p class="category-desc">Premium cotton t-shirts in various styles and colors</p>
+                        <a href="#t-shirts" class="btn btn-outline">View Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="shirts">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Casual Shirts">
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">Casual Shirts</h3>
+                        <p class="category-desc">Stylish casual shirts for every occasion</p>
+                        <a href="#shirts" class="btn btn-outline">View Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="jeans">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jeans">
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">Jeans</h3>
+                        <p class="category-desc">Comfortable and durable jeans in various fits</p>
+                        <a href="#jeans" class="btn btn-outline">View Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="trousers">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Trousers">
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">Trousers</h3>
+                        <p class="category-desc">Casual trousers for a sophisticated look</p>
+                        <a href="#trousers" class="btn btn-outline">View Category</a>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="joggers">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Joggers">
+                    </div>
+                    <div class="category-info">
+                        <h3 class="category-name">Joggers</h3>
+                        <p class="category-desc">Comfortable joggers for casual and active wear</p>
+                        <a href="#joggers" class="btn btn-outline">View Category</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products Section -->
+    <section class="all-products">
+        <div class="container">
+            <h2 class="section-title">All Products</h2>
+            <p class="section-subtitle">Browse our complete collection</p>
+            
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="t-shirts">T-Shirts</button>
+                <button class="filter-btn" data-filter="shirts">Casual Shirts</button>
+                <button class="filter-btn" data-filter="jeans">Jeans</button>
+                <button class="filter-btn" data-filter="trousers">Trousers</button>
+                <button class="filter-btn" data-filter="joggers">Joggers</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product items will be loaded here via JavaScript -->
+            </div>
+            
+            <div class="load-more">
+                <button class="btn btn-primary" id="loadMore">Load More Products</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">
+                        <span class="logo-text">FASHION<span class="logo-point">POINT</span></span>
+                    </div>
+                    <p class="footer-text">Premium men's clothing retailer and wholesaler offering trendy and affordable fashion for the modern man.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="wholesale.html">Wholesale</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Style City</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-8900</li>
+                        <li><i class="fas fa-envelope"></i> info@fashionpoint.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Business Hours</h4>
+                    <ul class="business-hours">
+                        <li>Mon - Fri: 9:00 AM - 7:00 PM</li>
+                        <li>Saturday: 10:00 AM - 6:00 PM</li>
+                        <li>Sunday: 11:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Fashion Point. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <!-- Product details will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
